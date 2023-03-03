@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {box-sizing: border-box}
+        .mySlides1, .mySlides2 {display: none}
+        img {vertical-align: middle;}
+        
+        /* Slideshow container */
+        .slideshow-container {
+          width: 1970px;
+          height: 800px;
+         
+          
+        }
+        
+        /* Next & previous buttons */
+        .prev, .next {
+          cursor: pointer;
+          position: absolute;
+          top: 50%;
+          width: auto;
+          padding: 16px;
+          margin-top: -22px;
+          color: white;
+          font-weight: bold;
+          font-size: 18px;
+          transition: 0.6s ease;
+          border-radius: 0 3px 3px 0;
+        }
+        
+        /* Position the "next button" to the right */
+        .next {
+          right: 0;
+          border-radius: 3px 0 0 3px;
+        }
+        
+        /* On hover, add a grey background color */
+        .prev:hover, .next:hover {
+          background-color: #f1f1f1;
+          color: black;
+        }
+        #exap {
+            border: 1px solid #f1f1f1;
+            
+            background: #f1f1f1;
+            background-repeat: no-repeat;
+            background-size: auto;
+            height: 70px;
+            font-size: 30px;
+            
+          }
+        #exa {
+            border: 1px solid #f1f1f1;
+            
+            background: #f1f1f1;
+            background-repeat: no-repeat;
+            background-size: auto;
+          }
+          .slid-container {
+            overflow: auto;
+            white-space: nowrap;
+            width: 1900px;
+            height: 400px;
+            
+          }
+          h{
+            color:#0c082c;
+            font-size: 35px;
+          }
+          * {
+            box-sizing: border-box;
+          }
+          
+          form.example input[type=text] {
+            padding: 10px;
+            font-size: 17px;
+            border: 1px solid grey;
+            float: left;
+            width: 80%;
+            background: #0c082c;
+            height: 60px;
+          }
+          
+          form.example button {
+            
+            width: 20%;
+            padding: 10px;
+            background: #2196F3;
+            color: #f7f6fa;
+            font-size: 17px;
+            border: 1px solid grey;
+            
+            cursor: pointer;
+            height: 60px;
+          }
+          
+          form.example button:hover {
+            background: #0c082c;
+            height: 60px;
+          }
+          
+          form.example::after {
+            content: "";
+            clear: both;
+            display: table;
+            height: 60px;
+          }
+          p3{
+            color: #2e3536;
+          }
+          h1{
+            color: #fbfbfb;
+            font-size: 30px;
+          }
+          p5{
+            color: #2196F3;
+            font-size: 40px;
+          }
+          pr{
+            padding: 10px;
+            width: 985px;
+            height: 800px;
+            border: 5px solid grey;
+            float: left;
+          }
+          pl{
+            border: 40px;
+            padding: 40px;
+            width: 985px;
+            height: 800px;
+            
+            float: right;
+
+          }
+          #yy{
+            background-color: #0c082c;
+            color: #0c082c;
+            height: 50px;
+          }
+          uu{
+            height: 70px;
+            font-size: 40px;
+            
+          }
+          #u{
+            height: 40px;
+            font-size: 40px;
+            
+          }
+          a{
+            color: black;
+            font-size: 22px;
+          }body {font-family: Arial;}
+
+          /* Style the tab */
+          .tab1 {
+            overflow: hidden;
+            border: 1px solid #ccc;
+            background-color: #f1f1f1;
+          }
+          
+          /* Style the buttons inside the tab */
+          .tab button {
+            background-color: inherit;
+            float: left;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 14px 16px;
+            transition: 0.3s;
+            font-size: 17px;
+          }
+          
+          /* Change background color of buttons on hover */
+          .tab button:hover {
+            background-color: #ddd;
+          }
+          
+          /* Create an active/current tablink class */
+          .tab button.active {
+            background-color: #ccc;
+          }
+          
+          /* Style the tab content */
+          .tabcontent {
+            display: none;
+            padding: 6px 12px;
+            border: 1px solid #ccc;
+            border-top: none;
+          }
+          div1 {
+            width: 17%;
+            height: 100%;
+            float: left;
+          }
+          h3{font-size: 15PX;
+
+          }
+          
+        </style>
+</head>
+<body>
+    <div id="yy">
+
+        <center>
+        <h1>CaratLane - A Tanishq Partnership Introducing CaratLane PoP! Plan your purchase  here</h1>
+    </center>
+    </div>
+    <div id="uu">
+        <img src="Screenshot 2023-03-02 152006.png" alt=""width="200px"height="100px">
+       
+        <img src="Screenshot 2023-03-02 153726.png" alt=""width="200px"high="100px">
+        <img src="Screenshot 2023-03-02 153711.png" alt=""width="200px"high="100px">
+        <img src="Screenshot 2023-03-02 153739.png" alt=""width="200px"high="100px">
+        <img src="Screenshot 2023-03-02 153753.png" alt=""width="200px"high="100px">
+   
+    <img src="Screenshot 2023-03-02 153213.png" alt="">
+    </div>
+    <div id="u">
+        <center>
+        <img src="Screenshot 2023-03-02 154248.png" alt=""width="100px"height="40px">
+       
+        <img src="Screenshot 2023-03-02 154236.png" alt=""width="100px"height="40px">
+        <img src="Screenshot 2023-03-02 154220.png" alt=""width="100px"height="40px">
+        <img src="Screenshot 2023-03-02 154205.png" alt=""width="100px"height="40px">
+        <img src="Screenshot 2023-03-02 154152.png" alt=""width="100px"height="40px">
+        <img src="Screenshot 2023-03-02 154134.png" alt=""width="100px"height="40px">
+   
+        <img src="Screenshot 2023-03-02 154123.png" alt=""width="100px"height="40px">
+        <img src="Screenshot 2023-03-02 154104.png" alt=""width="100px"height="40px">
+    </center>
+    
+    </div>
+    
+<div class="tab">
+    <button class="tablinks" onclick="openCity(event, 'N')">____________ _____________</button>
+    <button class="tablinks" onclick="openCity(event, 'NEW ARRIVAL')">NEW ARRIVAL</button>
+    <button class="tablinks" onclick="openCity(event, 'RINGS')">RINGS</button>
+    <button class="tablinks" onclick="openCity(event, 'EARRINGS')">EARRINGS</button>
+    <button class="tablinks" onclick="openCity(event, 'BRACELETS&BANGLES')">BRACELETS&BANGLES</button>
+    <button class="tablinks" onclick="openCity(event, 'SOLITIRES')">SOLITIRES</button>
+    <button class="tablinks" onclick="openCity(event, 'MANGALSUTRA')">MANGALSUTRA</button>
+    <button class="tablinks" onclick="openCity(event, 'READY TO SHIP')">READY TO SHIP</button>
+    <button class="tablinks" onclick="openCity(event, 'KIDS')">KIDS</button>
+    <button class="tablinks" onclick="openCity(event, 'OUTHER JEWELLERY')">OUTHER JEWELLERY</button>
+    <button class="tablinks" onclick="openCity(event, 'GIFTING')">GIFTING</button>
+
+  </div>
+  
+  <div id="RINGS" class="tabcontent" width="1900px"height="800px">
+    
+    <div1>
+        <h3>SHOP BY STYLE</h3>
+        <h3>_____   _</h3>
+        <h3>ENGAMENT</h3>
+        <h3>COUPLE RINGS</h3>
+        <h3>CASUAL</h3>
+        <h3>ADJUSTABLE RINGS</h3>
+        <h3>SLIVER RING</h3>
+        </div1>
+        <div1>
+            <h3>PLATINUM RINGS</h3>
+            <h3>COCKTAIL</h3>
+            <h3>BANDS</h3>
+            <h3>PROMISE RINGS</h3>
+            <h3>SILVER STATEMENT RINGS</h3>
+            </div1>
+            <div1>
+                <h3>GEMSTONE</h3>
+            <h3>SOLITAIRE</h3>
+            <h3>DIAMOND</h3>
+            <h3>GOLD</h3>
+            <h3>YELLOW GOLD</h3>
+            <h3>WHITE GOLD</h3>
+            <h3>ROSE GOLD</h3>
+            <h3>SILVER BY SHAYA</h3>
+                </div1>
+                <div1>
+                    <h3>FOR MEN</h3>
+                <h3>UNDER $10K</h3>
+                <h3>$10K TO $20K</h3>
+                <h3>$20K TO $30K</h3>
+                <h3>ABOVE $30K</h3>
+                <h3>FOR WOMEN</h3>
+                <h3></h3>
+                <h3></h3>
+                <h3>_____ __</h3>
+                <h3></h3>
+                <h3>SHOW ALL DESIGNS</h3>
+                    </div1>
+                    <img src="Screenshot 2023-03-02 201910.png" alt="">
+  </div>
+  
+ 
+  
+  <div id="EARRINGS" class="tabcontent" width="1900px"height="800px">
+    <div1>
+        <h3>SHOP BY STYLE</h3>
+        <h3><a href="home1.html">_____   _</a></h3>
+        <h3>ENGAMENT</h3>
+        <h3>COUPLE RINGS</h3>
+        <h3>CASUAL</h3>
+        <h3>ADJUSTABLE RINGS</h3>
+        <h3>SLIVER RING</h3>
+        </div1>
+        <div1>
+            <h3>PLATINUM RINGS</h3>
+            <h3>COCKTAIL</h3>
+            <h3>BANDS</h3>
+            <h3>PROMISE RINGS</h3>
+            <h3>SILVER STATEMENT RINGS</h3>
+            </div1>
+            <div1>
+                <h3>GEMSTONE</h3>
+            <h3>SOLITAIRE</h3>
+            <h3>DIAMOND</h3>
+            <h3>GOLD</h3>
+            <h3>YELLOW GOLD</h3>
+            <h3>WHITE GOLD</h3>
+            <h3>ROSE GOLD</h3>
+            <h3>SILVER BY SHAYA</h3>
+                </div1>
+                <div1>
+                    <h3>FOR MEN</h3>
+                <h3>UNDER $10K</h3>
+                <h3>$10K TO $20K</h3>
+                <h3>$20K TO $30K</h3>
+                <h3>ABOVE $30K</h3>
+                <h3>FOR WOMEN</h3>
+                <h3></h3>
+                <h3></h3>
+                <h3>_____ __</h3>
+                <h3></h3>
+                <h3>SHOW ALL DESIGNS</h3>
+                    </div1>
+                    <img src="Screenshot 2023-03-02 201910.png" alt="">
+  </div>
+  <div id="BRACELETS&BANGLES" class="tabcontent" width="1900px"height="800px">
+    <div1>
+    <h3>London</h3>
+    <p>London is the capital city of England.</p>
+    </div1>
+    <div1>
+        <h3>London</h3>
+        <p>London is the capital city of England.</p>
+        </div1>
+        <div1>
+            <h3>London</h3>
+            <p>London is the capital city of England.</p>
+            </div1>
+            <div1>
+                <h3>London</h3>
+                <p>London is the capital city of England.</p>
+                </div1>
+  </div>
+  <div id="SOLITIRES" class="tabcontent" width="1900px"height="800px">
+    <div1>
+    <h3>London</h3>
+    <p>London is the capital city of England.</p>
+    </div1>
+    <div1>
+        <h3>London</h3>
+        <p>London is the capital city of England.</p>
+        </div1>
+        <div1>
+            <h3>London</h3>
+            <p>London is the capital city of England.</p>
+            </div1>
+            <div1>
+                <h3>London</h3>
+                <p>London is the capital city of England.</p>
+                </div1>
+  </div>
+  <div id="MANGALSUTRA" class="tabcontent" width="1900px"height="800px">
+    <div1>
+    <h3>London</h3>
+    <p>London is the capital city of England.</p>
+    </div1>
+    <div1>
+        <h3>London</h3>
+        <p>London is the capital city of England.</p>
+        </div1>
+        <div1>
+            <h3>London</h3>
+            <p>London is the capital city of England.</p>
+            </div1>
+            <div1>
+                <h3>London</h3>
+                <p>London is the capital city of England.</p>
+                </div1>
+  </div>
+  <div id="READY TO SHIP" class="tabcontent" width="1900px"height="800px">
+    <div1>
+    <h3>London</h3>
+    <p>London is the capital city of England.</p>
+    </div1>
+    <div1>
+        <h3>London</h3>
+        <p>London is the capital city of England.</p>
+        </div1>
+        <div1>
+            <h3>London</h3>
+            <p>London is the capital city of England.</p>
+            </div1>
+            <div1>
+                <h3>London</h3>
+                <p>London is the capital city of England.</p>
+                </div1>
+  </div>
+  <div id="KIDS" class="tabcontent" width="1900px"height="800px">
+    <div1>
+    <h3>London</h3>
+    <p>London is the capital city of England.</p>
+    </div1>
+    <div1>
+        <h3>London</h3>
+        <p>London is the capital city of England.</p>
+        </div1>
+        <div1>
+            <h3>London</h3>
+            <p>London is the capital city of England.</p>
+            </div1>
+            <div1>
+                <h3>London</h3>
+                <p>London is the capital city of England.</p>
+                </div1>
+  </div>
+  <div id="OUTHER JEWELLERY" class="tabcontent" width="1900px"height="800px">
+    <div1>
+    <h3>London</h3>
+    <p>London is the capital city of England.</p>
+    </div1>
+    <div1>
+        <h3>London</h3>
+        <p>London is the capital city of England.</p>
+        </div1>
+        <div1>
+            <h3>London</h3>
+            <p>London is the capital city of England.</p>
+            </div1>
+            <div1>
+                <h3>London</h3>
+                <p>London is the capital city of England.</p>
+                </div1>
+  </div>
+  <div id="GIFTING" class="tabcontent" width="1900px"height="800px">
+    <div1>
+    <h3>London</h3>
+    <p>London is the capital city of England.</p>
+    </div1>
+    <div1>
+        <h3>London</h3>
+        <p>London is the capital city of England.</p>
+        </div1>
+        <div1>
+            <h3>London</h3>
+            <p>London is the capital city of England.</p>
+            </div1>
+            <div1>
+                <h3>London</h3>
+                <p>London is the capital city of England.</p>
+                </div1>
+  </div>
+  
+
+  <script>
+  function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+  }
+  </script>
+    <div id="exa">
+        <div class="slideshow-container">
+          
+        
+          <div class="mySlides1">
+            <img src="Screenshot 2023-03-02 135233.png" style="width:100%">
+          </div>
+        
+          <div class="mySlides1">
+            <img src="1X.jpg" style="width:100%">
+          </div>
+          <div class="mySlides1">
+            <img src="2x.jpg" style="width:100%">
+          </div>
+          <div class="mySlides1">
+            <img src="1X.jpg" style="width:100%">
+          </div>
+          <div class="mySlides1">
+            <img src="2x.jpg" style="width:100%">
+          </div>
+        
+          <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+          
+
+        </div>
+        <div>
+        <div id="pl">
+            <img src="3_Silver_336x420.png" alt=""width="900px"height="800px">
+        
+            <img src="4_NewIn_336x420.png" alt=""width="900px"height="800px">
+        </div>
+        <div id="pl">
+            <img src="Screenshot 2023-03-02 143534.png" alt=""width="600px"height="200px">
+        
+            <img src="Screenshot 2023-03-02 143602.png" alt=""width="600px"height="200px">
+            <img src="Screenshot 2023-03-02 143616.png" alt=""width="600px"height="200px">
+        </div>
+        <div id="pl">
+            <img src="Screenshot 2023-03-02 143630.png" alt=""width="600px"height="200px">
+            <img src="Screenshot 2023-03-02 143644.png" alt=""width="600px"height="200px">
+        
+            <img src="Screenshot 2023-03-02 143659.png" alt=""width="600px"height="200px">
+        </div>
+        <div id="pl">
+            <img src="33.png" alt=""width="600px"height="400px">
+            <img src="333.png" alt=""width="600px"height="400px">
+        
+            <img src="Screenshot 2023-03-02 144533.png" alt=""width="600px"height="200px">
+        </div>
+        <center>
+            <img src="Screenshot 2023-03-02 145033.png" alt="">
+        </center>
+        <div id="pl">
+            <img src="Screenshot 2023-03-02 144634.png" alt=""width="950px"height="400px">
+            <img src="Screenshot 2023-03-02 144651.png" alt=""width="950px"height="400px">
+        
+           
+        </div>
+        <div id="pl">
+            
+            <img src="Screenshot 2023-03-02 144711.png" alt=""width="970px"height="400px">
+        
+            <img src="Screenshot 2023-03-02 144725.png" alt=""width="970px"height="400px">
+        </div>
+        <div id="pl">
+            <img src="Screenshot 2023-03-02 150002.png" alt=""width="1970px"height="800px">
+        </div>
+        <div id="pl">
+            <img src="Screenshot 2023-03-02 150025.png" alt=""width="1970px"height="800px">
+        </div>
+        <div id="pl">
+            <img src="Screenshot 2023-03-02 150155.png" alt=""width="1970px"height="800px">
+        </div>
+        <div id="pl">
+            <img src="Screenshot 2023-03-02 150216.png" alt=""width="1970px"height="800px">
+        </div>
+        <div id="pl">
+            <img src="Screenshot 2023-03-02 150237.png" alt=""width="1970px"height="800px">
+        </div>
+        <div id="pl">
+            <img src="Screenshot 2023-03-02 150046.png" alt=""width="1970px"height="800px">
+        </div>
+        <div id="pl">
+            <img src="Screenshot 2023-03-02 150112.png" alt=""width="1970px"height="800px">
+        </div>
+        <div id="pl">
+            <img src="Screenshot 2023-03-02 150237.png" alt=""width="1970px"height="800px">
+        </div>
+        <div id="pl">
+            <img src="Screenshot 2023-03-02 150838.png" alt=""width="1970px"height="800px">
+        </div>
+
+
+    </div>
+    </div>
+    <script>
+        let slideIndex = [1,1];
+        let slideId = ["mySlides1", "mySlides2"]
+        showSlides(1, 0);
+        showSlides(1, 1);
+        
+        function plusSlides(n, no) {
+          showSlides(slideIndex[no] += n, no);
+        }
+        
+        function showSlides(n, no) {
+          let i;
+          let x = document.getElementsByClassName(slideId[no]);
+          if (n > x.length) {slideIndex[no] = 1}    
+          if (n < 1) {slideIndex[no] = x.length}
+          for (i = 0; i < x.length; i++) {
+             x[i].style.display = "none";  
+          }
+          x[slideIndex[no]-1].style.display = "block";  
+        }
+        </script>
+</body>
+</html>

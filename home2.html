@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    
+    <style>
+        * {box-sizing: border-box}
+        .mySlides1, .mySlides2 {display: none}
+        img {vertical-align: middle;}
+        
+        /* Slideshow container */
+        .slideshow-container {
+          width: 1900px;
+          height: 800px;
+         
+          
+        }
+        
+        /* Next & previous buttons */
+        .prev, .next {
+          cursor: pointer;
+          position: absolute;
+          top: 50%;
+          width: auto;
+          padding: 16px;
+          margin-top: -22px;
+          color: white;
+          font-weight: bold;
+          font-size: 18px;
+          transition: 0.6s ease;
+          border-radius: 0 3px 3px 0;
+        }
+        
+        /* Position the "next button" to the right */
+        .next {
+          right: 0;
+          border-radius: 3px 0 0 3px;
+        }
+        
+        /* On hover, add a grey background color */
+        .prev:hover, .next:hover {
+          background-color: #f1f1f1;
+          color: black;
+        }
+        #exap {
+            border: 1px solid #f1f1f1;
+            
+            background: #f1f1f1;
+            background-repeat: no-repeat;
+            background-size: auto;
+            height: 70px;
+            font-size: 30px;
+            
+          }
+        #exa {
+            border: 1px solid #f1f1f1;
+            
+            background: #f1f1f1;
+            background-repeat: no-repeat;
+            background-size: auto;
+          }
+          .slid-container {
+            overflow: auto;
+            white-space: nowrap;
+            width: 1900px;
+            height: 400px;
+            
+          }
+          h{
+            color:#f1f1f1;
+            font-size: 35px;
+          }
+          * {
+            box-sizing: border-box;
+          }
+          
+          form.example input[type=text] {
+            padding: 10px;
+            font-size: 17px;
+            border: 1px solid grey;
+            float: left;
+            width: 80%;
+            background: #f1f1f1;
+            height: 60px;
+          }
+          
+          form.example button {
+            float: left;
+            width: 20%;
+            padding: 10px;
+            background: #2196F3;
+            color: #f1f1f1;
+            font-size: 17px;
+            border: 1px solid grey;
+            border-left: none;
+            cursor: pointer;
+            height: 60px;
+          }
+          
+          form.example button:hover {
+            background: #f1f1f1;
+            height: 60px;
+          }
+          
+          form.example::after {
+            content: "";
+            clear: both;
+            display: table;
+            height: 60px;
+          }
+          p3{
+            color: #2e3536;
+          }
+          h4{
+            color: #fbfbfb;
+            font-size: 40px;
+          }
+          p5{
+            color: #2196F3;
+            font-size: 40px;
+          }
+        </style>
+  </head>
+  <body>
+    <div id="exap">
+    <ul class="nav nav-pills">
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="true">__</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Separated link</a></li>
+            </ul>
+          </li>
+          <p>  </p>
+          <img src="disney-hotstar-logo-dark.svg"
+
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">TV</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Separated link</a></li>
+            </ul>
+          </li>
+          <p>  </p>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Movies</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Separated link</a></li>
+          </ul>
+        </li>
+        <p>  </p>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Spotes</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Separated link</a></li>
+            </ul>
+          </li>
+          <p>  </p>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropd" data-bs-toggle="Digital+" href="#" role="button" aria-expanded="false">Digital+</a>
+            <ul class="dropdown-menu">
+              <li><a class="Digital+" href="#">Action</a></li>
+              <li><a class="Digital+" href="#">Another action</a></li>
+              <li><a class="Digital+" href="#">Something else here</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Separated link</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Dropdown</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Separated link</a></li>
+            </ul>
+          </li>
+          <form class="example" action="/action_page.php" style="margin:auto;max-width:300px">
+            <input type="text" placeholder="Search.." name="search2">
+            <button type="submit"><i class="fa fa-search">subscription</i></button>
+          </form>
+          <P3>LOGING____</P3>
+        
+      </ul>
+    </div>
+      <div id="exa">
+        <div class="slideshow-container">
+          <div class="mySlides1">
+            <!-- <img src="Screenshot 2023-03-01 141612.png" style="width:100%"> -->
+            <a href="vidio.html"><img src="Screenshot 2023-03-01 141612.png" style="width:100%" alt="HTML tutorial" ></a>
+          </div>
+        
+          <div class="mySlides1">
+            <img src="Screenshot 2023-03-01 142034.png" style="width:100%">
+          </div>
+        
+          <div class="mySlides1">
+            <img src="Screenshot 2023-03-01 142051.png" style="width:100%">
+          </div>
+          <div class="mySlides1">
+            <img src="Screenshot 2023-03-01 142109.png" style="width:100%">
+          </div>
+          <div class="mySlides1">
+            <img src="Screenshot 2023-03-01 142127.png" style="width:100%">
+          </div>
+          <div class="mySlides1">
+            <img src="Screenshot 2023-03-01 142140.png" style="width:100%">
+          </div>
+        
+          <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+          
+
+        </div>
+
+
+        <div class="slid-container">
+            <h>Shows from the 2020s</h><br>
+        <img src="742835-v.webpg" />
+        <img src="917645-v.webp" />
+        <img src="1042213-v-1416e8e25397.webp" />
+        <img src="1089263-v-13f4d7e9411b.webp" />
+        <img src="1109883-v-fd70e26332d7.webp" />
+        <img src="1119833-v-fcf7e530dcd6.webp" />
+        <img src="1306891-v-50ee47a8f747.webp" />
+        <img src="1323065-v-58c6d2de61e1.webp" />
+        <img src="1350385-v-48f2a37d426a.webp" />
+        <img src="1360928-v-b808273e5b54.webp" />
+        <img src="1441475-v-33d3428a9d16.webp" />
+        <img src="1443749-v-325db485edca.webp" />
+        <img src="1445002-v-29ff9172fed9.webp" />
+        <img src="1474702-v-100369d7af4c.webp" />
+        
+        </div>
+        
+        </div>
+        <script>
+            let slideIndex = [1,1];
+            let slideId = ["mySlides1", "mySlides2"]
+            showSlides(1, 0);
+            showSlides(1, 1);
+            
+            function plusSlides(n, no) {
+              showSlides(slideIndex[no] += n, no);
+            }
+            
+            function showSlides(n, no) {
+              let i;
+              let x = document.getElementsByClassName(slideId[no]);
+              if (n > x.length) {slideIndex[no] = 1}    
+              if (n < 1) {slideIndex[no] = x.length}
+              for (i = 0; i < x.length; i++) {
+                 x[i].style.display = "none";  
+              }
+              x[slideIndex[no]-1].style.display = "block";  
+            }
+            </script>
+  </body>
+</html>

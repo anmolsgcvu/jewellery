@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial;}
+ 
+<style>
+    * {box-sizing: border-box}
+    .mySlides1, .mySlides2 {display: none}
+    img {vertical-align: middle;}
+    
+    /* Slideshow container */
+    .slideshow-container {
+      width: 1900px;
+      height: 800px;
+     
+      
+    }
+    
+    /* Next & previous buttons */
+    .prev, .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      padding: 16px;
+      margin-top: -22px;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+    }
+    
+    /* Position the "next button" to the right */
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+    
+    /* On hover, add a grey background color */
+    .prev:hover, .next:hover {
+      background-color: #f1f1f1;
+      color: black;
+    }
+   
+      #exap {
+        border: 1px solid #1b1F20;
+        
+        background: #0c082c;
+        background-repeat: no-repeat;
+        background-size: auto;
+        height: 70px;
+        font-size: 30px;
+        
+      }
+    #exa {
+        border: 1px solid #0c082c;
+        
+        background: #0c082c;
+        background-repeat: no-repeat;
+        background-size: auto;
+      }
+      .slid-container {
+        overflow: auto;
+        white-space: nowrap;
+        width: 1900px;
+        height: 400px;
+        
+      }
+      h{
+        color:#0c082c;
+        font-size: 35px;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      
+      form.example input[type=text] {
+        padding: 10px;
+        font-size: 17px;
+        border: 1px solid grey;
+        float: left;
+        width: 80%;
+        background: #0c082c;
+        height: 60px;
+      }
+      
+      form.example button {
+        float: left;
+        width: 20%;
+        padding: 10px;
+        background: #2196F3;
+        color: #0c082c;
+        font-size: 17px;
+        border: 1px solid grey;
+        border-left: none;
+        cursor: pointer;
+        height: 60px;
+      }
+      
+      form.example button:hover {
+        background: #0c082c;
+        height: 60px;
+      }
+      
+      form.example::after {
+        content: "";
+        clear: both;
+        display: table;
+        height: 60px;
+      }
+      p3{
+        color: #2e3536;
+      }
+      h4{
+        color: #fbfbfb;
+        font-size: 40px;
+      }
+      p5{
+        color: #2196F3;
+        font-size: 40px;
+      }
+    </style>
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+</style>
+</head>
+<body>
+
+    <div id="exap">
+        <ul class="nav nav-pills">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="true">__</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Separated link</a></li>
+                </ul>
+              </li>
+              <p>  </p>
+              <img src="disney-hotstar-logo-dark.svg"
+    
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">TV</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Separated link</a></li>
+                </ul>
+              </li>
+              <p>  </p>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Movies</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Separated link</a></li>
+              </ul>
+            </li>
+            <p>  </p>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Spotes</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Separated link</a></li>
+                </ul>
+              </li>
+              <p>  </p>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropd" data-bs-toggle="Digital+" href="#" role="button" aria-expanded="false">Digital+</a>
+                <ul class="dropdown-menu">
+                  <li><a class="Digital+" href="#">Action</a></li>
+                  <li><a class="Digital+" href="#">Another action</a></li>
+                  <li><a class="Digital+" href="#">Something else here</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Separated link</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Dropdown</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Separated link</a></li>
+                </ul>
+              </li>
+              <form class="example" action="/action_page.php" style="margin:auto;max-width:300px">
+                <input type="text" placeholder="Search.." name="search2">
+                <button type="submit"><i class="fa fa-search">subscription</i></button>
+              </form>
+              <P3>LOGING____</P3>
+            
+          </ul>
+    </div><div id="exa">
+        <div class="slideshow-container">
+          <div class="mySlides1">
+            <!-- <img src="Screenshot 2023-03-01 141612.png" style="width:100%"> -->
+            <a href="vidio.html"><img src="Screenshot 2023-03-01 141612.png" style="width:100%" alt="HTML tutorial" ></a>
+          </div>
+        
+          <div class="mySlides1">
+            <img src="Screenshot 2023-03-01 142034.png" style="width:100%">
+          </div>
+        
+          <div class="mySlides1">
+            <img src="Screenshot 2023-03-01 142051.png" style="width:100%">
+          </div>
+          <div class="mySlides1">
+            <img src="Screenshot 2023-03-01 142109.png" style="width:100%">
+          </div>
+          <div class="mySlides1">
+            <img src="Screenshot 2023-03-01 142127.png" style="width:100%">
+          </div>
+          <div class="mySlides1">
+            <img src="Screenshot 2023-03-01 142140.png" style="width:100%">
+          </div>
+        
+          <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+          
+
+        </div>
+        </div>
+   
+</body>
+</html> 
